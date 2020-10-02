@@ -1,0 +1,37 @@
+table {
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+td,
+th {
+    border-style: solid;
+    border-width: 2px;
+}
+
+th {
+    border-top-style: none;
+    background-color: lawngreen;
+}
+
+td {
+    background-color: lightblue;
+    border-radius: 4px;
+}
+
+#celda_2_4 {
+    background-color: lightcoral;
+}
+
+.verde {
+    background-color: greenyellow;
+}
+
+.yellow {
+    background-color: yellow;
+    text-align: center;
+}
+
+.negrita {
+    font-weight: bold;
+}
