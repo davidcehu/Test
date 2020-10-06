@@ -28,6 +28,15 @@ td {
 }
 
 .yellow {
+    text-align: end;
+}
+
+td.yellow {
+    background-color: yellow;
+    text-align: center;
+}
+
+th.yellow {
     background-color: yellow;
     text-align: center;
 }
