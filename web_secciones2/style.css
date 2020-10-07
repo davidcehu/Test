@@ -1,0 +1,41 @@
+    * {
+        margin: 0%;
+        box-sizing: border-box;
+    }
+    
+    header {
+        background-color: #258ace;
+        height: 50px;
+        position: fixed;
+        left: 0%;
+        top: 0%;
+        width: 15%;
+    }
+    
+    nav {
+        background-color: #00aeff;
+        height: 50px;
+        position: fixed;
+        right: 0%;
+        width: 85%;
+    }
+    
+    aside {
+        background-color: #00d9ff;
+        position: fixed;
+        left: 0%;
+        width: 15%;
+        top: 50px;
+        border-style: solid;
+        min-height: calc(100vh - 50px);
+        overflow: auto
+    }
+    
+    main {
+        background-color: #70ebfc;
+        position: absolute;
+        right: 0%;
+        width: 85%;
+        top: 50px;
+        min-height: calc(100vh - 50px);
+    }
