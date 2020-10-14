@@ -1,4 +1,4 @@
-*{
+* {
     /* Margin 0 para todos los elementos */
     margin: 0;
     /* Los bordes y el padding cuentan en el ancho */
@@ -8,11 +8,12 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header{
-/* color de fondo */
+header {
     text-align: center;
     padding-top: 15px;
+    /* color de fondo */
     background-color: lightyellow;
+    padding-top: 5px
     /* Altura del elemento, tiene que ser un elemento de bloque y 
     la especificaremos en pixeles o en vh */
     height: 50px;
@@ -23,25 +24,30 @@ header{
     para los demás elementos
     relative, es el valor por defecto, quiere decir que se posicionan
     las cosas unas al lado de otras */
-    position: fixed;
+    position: absolute;
     /* cuando posicionamos de manera absolute o fixed
     podemos decirle a cuánta distancia estará de los bordes
-    de la web top, bottom, left, right */
-    
-    /* El ancho del elemento, normalmente usaremos
+    de la web top, bottom, left, right 
+    El ancho del elemento, normalmente usaremos
     porcentajes */
-    width: 15%;
+    width: 100%;
+    /* Esto significa que el borde tiene arriba 5px, izquierda y derecha 3px, abajo 2px
+    border-style: solid;
+    border-width: 5px 3px 2px;
+    border-color: black;*/
+    top: 0px;
 }
 
-nav{
+nav {
     background-color: rgb(200, 195, 195);
     padding-top: 7px;
     padding-right: 7px;
     height: 50px;
     position: fixed;
-    right: 0;
-    width: 85%;
-    text-align: end;
+    top: 0px;
+    height: 50px;
+    width: 100%%;
+    text-align: center;
     /* Esto es para subir o bajar elementos cuando se solapen
     a modo de capas. Por defecto el valor es 0 así que 
     si le ponemos 1 quiere decir que estará por encima
@@ -49,11 +55,11 @@ nav{
     z-index: 1;
 }
 
-aside{
+aside {
     padding: 10px;
     background-color: rgb(0, 140, 255);
     position: fixed;
-    left: 0;
+    right: 0;
     width: 15%;
     top: 50px;
     border-right-style: solid;
@@ -64,51 +70,57 @@ aside{
     overflow: auto;
 }
 
-main{
+main {
     background-color: rgba(0, 195, 255, 0.678);
     position: absolute;
-    right: 0;
+    left: 0;
     width: 85%;
     top: 50px;
     /* min-height nos permite especificar una altura 
     mínima para los elementos, por si acaso el contenido
     no es lo suficientemente grande; */
     min-height: calc(100vh - 50px);
-}
-/* Todos los enlaces hijos directos de aside */
-aside > a{
-    display: block;
-    background-color: yellow;
-    border-style: solid;
-    border-color: yellow;
-    border-width: 2px;
-    text-align: center;
-    padding: 5px;
-    margin: 10px;
-    border-radius: 40px;
-    text-decoration: none;
+    /* El padding es equivalente a las 4 direcciones, vistas en dirección de las agujas del reloj empezando desde arriba*/
+    padding: 2vh 2% 1vh 2%;
+    padding-top: 2vh;
+    padding-right: 2%;
+    padding-bottom: 1vh;
+    padding-left: 2%;
 }
 
-aside > a:hover{
+
+/* Todos los enlaces hijos directos de aside */
+
+aside>a {
+    margin: 10px;
+    display: block
+}
+
+nav>a:hover,
+aside>a:hover {
     border-color: black;
 }
 
-aside > a:visited{
+aside>a:visited,
+nav>a:visited {
     color: blue;
 }
 
-aside > h1{
+aside>h1 {
     text-align: center;
     border-bottom-color: black;
     border-bottom-style: solid;
     border-bottom-width: 1px;
-    padding-bottom: 10px;
-
+    padding-bottom: 10px
 }
 
-nav > a{
+nav>a {
     display: inline-block;
     width: 151px;
+}
+
+nav>a,
+aside>a {
     background-color: yellow;
     border-style: solid;
     border-color: yellow;
@@ -119,10 +131,32 @@ nav > a{
     text-decoration: none;
 }
 
-nav > a:hover{
-    border-color: black;
+header>img {
+    width: 40px;
+    height: 40px;
 }
 
-nav > a:visited{
-    color: blue;
+#video_oculto {
+    display: none
+}
+
+main:hover #video_oculto {
+    display: inline;
+}
+
+
+/* En el momento de hacer click en el botón, el borde se pone blanco*/
+
+:active>a:active {
+    border-color: white;
+}
+
+aside>p {
+    border-top-style: solid;
+    border-color: black;
+    text-align: center;
+}
+
+footer {
+    bottom: 0px;
 }
