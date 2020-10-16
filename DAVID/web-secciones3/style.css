@@ -73,8 +73,9 @@ main {
     top: 100px;
     /* min-height nos permite especificar una altura 
     mínima para los elementos, por si acaso el contenido
-    no es lo suficientemente grande; */
-    min-height: calc(100vh - 150px);
+    no es lo suficientemente grande; height nos permmite que el footer no se solape por debajo */
+    height: calc(100vh - 150px);
+    overflow: auto;
 }
 
 
@@ -104,9 +105,12 @@ aside>a {
 
 footer {
     position: absolute;
+    width: 100%;
     bottom: 0;
     height: 50px;
     padding-top: 2px;
+    z-index: 1;
+    background-color: burlywood;
 }
 
 aside>h1 {
