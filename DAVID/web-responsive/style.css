@@ -9,22 +9,20 @@
 header,
 nav {
     height: 50px;
-    background-color: burlywood;
 }
 
 footer {
     display: none;
-    background-color: violet;
 }
 
 main {
-    min-height: calc( 100vh - 150px);
     background-color: yellow;
+    min-height: calc( 100vh - 150px);
 }
 
 aside {
-    min-height: 50px;
     background-color: tomato;
+    min-height: 50px;
 }
 
 
@@ -37,14 +35,14 @@ aside {
         display: inline-block;
     }
     header {
-        width: 29%;
+        width: 30%;
     }
     nav {
         width: 70%
     }
     ;
     aside {
-        width: 29%;
+        width: 30%;
         display: inline-block;
         vertical-align: top;
         min-height: calc(100vh - 50px);
@@ -57,7 +55,8 @@ aside {
 
 @media (min-widht: 1000px) {
     header {
-        width 100% height: 50px;
+        width: 100%;
+        height: 50px;
     }
     nav,
     aside,
@@ -79,9 +78,9 @@ aside {
         width: 60%;
     }
     footer {
-        position: absolute;
         display: block;
+        position: absolute;
         bottom: 0%;
-        top: 50px;
+        height: 50px;
     }
 }
