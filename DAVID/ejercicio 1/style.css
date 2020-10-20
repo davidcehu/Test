@@ -1,0 +1,49 @@
+    /* Para todos los tamaños* { */
+    
+    * {
+        margin: 0%;
+        box-sizing: border-box;
+    }
+    
+    nav,
+    main {
+        position: absolute;
+    }
+    /* Versión de móvil */
+    
+    @media (max-width 480px) {
+        main {
+            top: 0px;
+            min-height: calc(100vh - 75px);
+            background-color: orange;
+            width: 100%;
+            overflow: auto;
+        }
+        nav {
+            bottom: 0px;
+            height: 75px;
+            width: 100%;
+            background: blue;
+        }
+        nav>a>img {
+            height: 80%;
+        }
+        nav>a>p {
+            display: none;
+        }
+        nav>a {
+            display: inline-block;
+            height: 100%;
+        }
+    }
+    /* Versión de escritorio */
+    
+    @media (min-width 480px) {
+        nav {
+            top: 0;
+            height: 50px;
+            width: 100%;
+            background-color: cadetblue;
+        }
+        main {}
+    }
