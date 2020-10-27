@@ -4,8 +4,7 @@
 }
 
 body {
-    background-color: lightblue;
-    width: 100%;
+    background-color: linen;
 }
 
 h1 {
@@ -17,32 +16,38 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     margin: 100px;
-    
+    background-color: moccasin;
 }
 
-#tabla-flex > div{
-    flex-basis: 33,3333%;
+#tabla-flex>div {
+    flex-basis: 33.3333%;
     flex-grow: 0;
     border-style: solid;
     border-width: 1px;
     padding: 10px;
     border-color: black;
-
 }
 
-#tabla-flex > #celdaTotal{
-    flex-grow: 0.5;
+#tabla-flex>#celdaTotal {
+    flex-grow: 1;
 }
 
-.verde {color: green;}
-.azul {color: blue;}
-.rojo {color: red;}
+.verde {
+    color: green;
+}
+
+.azul {
+    color: blue;
+}
+
+.rojo {
+    color: red;
+}
 
 .textoCentrado {
     text-align: center;
     font-weight: bold;
 }
-
 .textoDerecha{
     text-align: right;
 }
