@@ -1,0 +1,61 @@
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+    /* Reglas generales */
+    
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 100vh;
+    }
+    
+    header,
+    nav,
+    main,
+    aside,
+    footer {
+        flex-basis: 100%;
+        flex-grow: 1;
+        border-style: solid;
+        border-width: 1px;
+        padding: 15px;
+    }
+    
+    header {
+        background-color: lime;
+    }
+    
+    nav {
+        background-color: mediumaquamarine;
+    }
+    
+    main {
+        background-color: green;
+    }
+    
+    aside {
+        background-color: greenyellow;
+    }
+    
+    footer {
+        background-color: yellow;
+    }
+    /* Versión tablet */
+    
+    @media (min-width: 800px) {
+        aside {
+            order: 1;
+            flex-basis: 30%;
+            flex-direction: column;
+        }
+        main {
+            order: 2;
+            flex-basis: 70%;
+            flex-direction: column;
+        }
+        footer {
+            order: 3;
+        }
+    }
