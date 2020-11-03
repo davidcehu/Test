@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+tbody {
+    columns: 20px;
+}
+
+td,
+th {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}

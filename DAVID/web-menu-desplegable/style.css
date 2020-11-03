@@ -1,0 +1,33 @@
+ul {
+    padding: 0px;
+    list-style: none;
+}
+
+ul ul {
+    display: none;
+    position: absolute;
+    background-color: coral;
+    left: 120px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: cadetblue;
+}
+
+li {
+    background-color: cadetblue;
+    width: 100px;
+    padding: 5px;
+    margin-bottom: 1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: coral;
+}
+
+li:hover>ul {
+    display: block;
+}
+
+ul>li>ul>li {
+    border: none;
+    background-color: unset;
+}

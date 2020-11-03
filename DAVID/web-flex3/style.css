@@ -39,11 +39,16 @@ nav>a {
     text-decoration: none;
     color: white;
     border: 1px solid darkcyan;
+    transition-property: background-color, color red;
+    transition-duration: 1s;
+    transition-timing-function: ease;
 }
 
 nav>a:hover {
     background-color: white;
     color: darkcyan;
+    transform: rotate(90deg);
+    transition-duration: 5s;
 }
 
 footer {
@@ -67,6 +72,7 @@ main {
     flex-grow: 1;
     overflow: auto;
     height: calc( 100vh - 50px - 40px);
+    hyphens: auto;
 }
 
 aside>h1 {
