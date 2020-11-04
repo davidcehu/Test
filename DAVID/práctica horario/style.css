@@ -1,15 +1,21 @@
 * {
-    margin: 0;
+    margin: 5px;
     box-sizing: border-box;
-}
-
-tbody {
-    columns: 20px;
 }
 
 td,
 th {
     border-style: solid;
+    border-width: 1px;
     border-color: black;
-    border-width: 2px;
+    text-align: center;
+    padding: 5px;
 }
+
+td {}
+
+tfoot>p {
+    right: 0;
+}
+
+@media (480px) {}
