@@ -7,13 +7,20 @@ table {
     border-collapse: collapse;
 }
 
+tfoot>h3 {
+    position: relative;
+    text-align: end;
+    font-weight: bold;
+}
+
 td,
 th {
     border-style: solid;
     border-width: 2px;
     border-color: black;
-    text-align: center;
     padding: 5px;
+    text-align: center;
+    weight: 10%
 }
 
 .estudio {
@@ -55,12 +62,12 @@ th {
     background-color: rgb(69, 206, 69);
 }
 
-tfoot>p {
-    right: 0;
-}
-
 span {
     display: block;
 }
 
-@media (480px) {}
+@media (800px) {
+    span {
+        display: none;
+    }
+}
