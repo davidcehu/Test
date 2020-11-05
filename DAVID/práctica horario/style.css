@@ -1,17 +1,11 @@
-* {
-    margin: 10px auto 10px;
+    * {
+    margin: 5px;
     box-sizing: border-box;
     overflow: visible;
 }
 
 table {
     border-collapse: collapse;
-}
-
-tfoot>h3 {
-    position: relative;
-    text-align: end;
-    font-weight: bold;
 }
 
 td,
@@ -21,7 +15,7 @@ th {
     border-color: black;
     padding: 5px;
     text-align: center;
-    weight: 10%
+    width: 16%;
 }
 
 .estudio {
@@ -64,11 +58,21 @@ th {
 }
 
 span {
-    display: block;
+    display: contents;
 }
 
-@media (800px) {
+abbr {
+    display: none;
+}
+
+#nombre {
+    text-align: right;
+}
+
+@media (max-width: 600px) {
     span {
         display: none;
     }
-}
+    abbr {
+        display: block;
+    }
