@@ -1,6 +1,7 @@
 * {
     margin: 10px auto 10px;
     box-sizing: border-box;
+    overflow: visible;
 }
 
 table {
