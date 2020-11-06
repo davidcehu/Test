@@ -1,32 +1,26 @@
-// alert("Hola mundo");
+/* alert("Mira el h1");
+let elemento = document.getElementById("encabezado");
+elemento.innerHTML = "Hola clase";
+alert("Mira el h1");
+elemento.innerHTML = "Hola clase2";
+alert("Mira el h1");
+elemento.innerHTML = "Hola clase3";
+alert("Mira el h1");
+elemento.innerHTML = "Hola clase4";
+alert("Mira el h1");
+elemento.innerHTML = "Hola clase5"; */
 
-//Comentario de una línea
+/* let resultado;
 
-/*
-Esto es 
-un comentario multilínea
-*/
+resultado = confirm("Hola")
 
-/* Esto es un comentario*/
+console.log(resultado) */
 
-// Tipos de datos
+let resultado;
 
-// Tipo cadena de texto o string
-// alert("Esto es una cadena de texto");
-// alert('Esto también es una cadena de texto');
-// alert("I'm the \"teacher\" ");
-// alert('I\'m the teacher');
+resultado = confirm("¿Quieres que te salude?")
 
-// Tipo número entero
-// se pueden usar operadores aritméticos
-// alert("2" + 3);
-// alert(2 - 3);
-// alert(2 * 3);
-// alert(2 / 3);
-
-// Tipo número decimal
-// se pueden usar operadores aritméticos
-alert(2.5 + 3.1);
-alert(2.7 - 3.5);
-alert(21.1 * 3.2);
-alert(2.87 / 3.5);
+if (resultado == true) {
+    alert("Hola");
+}
+alert("fin del programa");
