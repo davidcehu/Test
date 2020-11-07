@@ -1,86 +1,86 @@
-          * {
-          margin: 1%;
-          box-sizing: border-box;
-          overflow: visible;
-      }
-      
-      table {
-          border-collapse: collapse;
-          max-height: 90vh;
-      }
-      
-      td,
-      th {
-          border-style: solid;
-          border-width: 2px;
-          border-color: black;
-          padding: 5px;
-          text-align: center;
-          min-width: 16%;
-      }
-      
-      .estudio {
-          background-color: rgb(64, 97, 105);
-          color: white;
-      }
-      
-      .deporte {
-          background-color: darkgoldenrod;
-          color: white;
-      }
-      
-      .comida {
-          background-color: grey;
-          color: white;
-      }
-      
-      .EIE {
-          background-color: rgb(255, 128, 124);
-      }
-      
-      .LEP {
-          background-color: rgb(179, 132, 218);
-      }
-      
-      .SOR {
-          background-color: rgb(252, 192, 81);
-      }
-      
-      .SR {
-          background-color: rgb(160, 190, 255);
-      }
-      
-      .AW {
-          background-color: rgb(255, 222, 131);
-      }
-      
-      .SI {
-          background-color: rgb(69, 206, 69);
-      }
-      
-      span {
-          display: contents;
-      }
-      
-      abbr {
-          display: none;
-      }
-      
-      tfoot>td {
-          text-align: end;
-      }
-      
-      body>p {
-          display: none;
-      }
-      
-      @media (max-width: 700px) {
-          span {
-              display: none;
-          }
-          abbr {
-              display: block;
-          }
-          body>p {
-              display: inherit;
-          }
+     * {
+     margin: 1%;
+     box-sizing: border-box;
+     overflow: visible;
+ }
+ 
+ table {
+     border-collapse: collapse;
+     max-height: 90vh;
+ }
+ 
+ #nombre {
+     text-align: right;
+ }
+ 
+ td,
+ th {
+     border-style: solid;
+     border-width: 2px;
+     border-color: black;
+     padding: 5px;
+     text-align: center;
+     min-width: 16%;
+ }
+ 
+ .estudio {
+     background-color: rgb(64, 97, 105);
+     color: white;
+ }
+ 
+ .deporte {
+     background-color: darkgoldenrod;
+     color: white;
+ }
+ 
+ .comida {
+     background-color: grey;
+     color: white;
+ }
+ 
+ .EIE {
+     background-color: rgb(255, 128, 124);
+ }
+ 
+ .LEP {
+     background-color: rgb(179, 132, 218);
+ }
+ 
+ .SOR {
+     background-color: rgb(252, 192, 81);
+ }
+ 
+ .SR {
+     background-color: rgb(160, 190, 255);
+ }
+ 
+ .AW {
+     background-color: rgb(255, 222, 131);
+ }
+ 
+ .SI {
+     background-color: rgb(69, 206, 69);
+ }
+ 
+ span {
+     display: contents;
+ }
+ 
+ abbr {
+     display: none;
+ }
+ 
+ body>p {
+     display: none;
+ }
+ 
+ @media (max-width: 700px) {
+     span {
+         display: none;
+     }
+     abbr {
+         display: block;
+     }
+     body>p {
+         display: inherit;
+     }
