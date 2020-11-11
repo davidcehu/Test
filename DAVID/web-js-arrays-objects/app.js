@@ -3,7 +3,7 @@
  en la segunda posición el apellido
  en la tercera posición la edad.
  */
-let alumnoArray = ["Pepito","Perez", 54];
+let alumnoArray = ["Pepito", "Perez", 54];
 
 /* Las posiciones en un array se empiezan por 0*/
 
@@ -17,7 +17,7 @@ alert(alumnoArray[2]);
 
 console.log(alumnoArray.length)
 
-let alumnoObjeto = { 
+let alumnoObjeto = {
     "nombre": "Pepito",
     "apellido": "Perez",
     "edad": 54
@@ -40,10 +40,10 @@ console.error(alumnoObjeto["apellido"]);
 alert(alumnoObjeto["edad"]);
 
 
-let clase={ 
+let clase = {
     "proyector": true,
     "radiadores": 2,
-    "alumnos": { 
+    "alumnos": {
         "fila1": ["Fernando", "Miguel", "Banu", "Xavier"],
         "fila2": ["Sergio", "Ginel", "Luis"],
         "fila3": ["Iván"]
@@ -51,3 +51,13 @@ let clase={
 }
 
 document.getElementById("parrafo").innerHTML = clase.alumnos.fila2[1];
+
+let matriz = [
+    [1, 2, 3, 4]
+    [5, 6, 7, 8]
+    [9, 10, 11, 12]
+]
+
+let tablero {
+    "A": ["T"]
+}
