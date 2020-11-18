@@ -9,7 +9,6 @@ aside,
 main,
 footer {
     display: flex;
-    border: 1px solid black;
 }
 
 span {
@@ -132,10 +131,25 @@ footer {
         margin-right: 15%;
         padding-bottom: 5%;
     }
+    nav>span {
+        display: inline;
+        text-justify: auto;
+        margin: auto;
+        color: ivory;
+        font-size: 2vh;
+    }
     aside {
         width: 10%;
         height: 90vh;
         flex-direction: column;
+    }
+    aside>span {
+        display: none;
+        text-justify: auto;
+    }
+    aside>a>img {
+        display: flex;
+        margin-bottom: 15vh;
     }
     header {
         width: 90%;
@@ -146,5 +160,76 @@ footer {
     main {
         width: 90%;
         margin-left: 10%;
+    }
+}
+
+@media (min-width: 1000px) {
+    nav {
+        position: fixed;
+        height: 10%;
+    }
+    nav>span {
+        display: inline;
+        text-justify: auto;
+        margin: auto;
+        color: ivory;
+        font-size: 2vh;
+    }
+    aside {
+        position: fixed;
+        top: 10%;
+        width: 20%;
+        height: 90%;
+        flex-direction: column;
+        text-align: center;
+    }
+    aside>a {
+        margin-bottom: 10%;
+    }
+    aside>a>img {
+        display: flex;
+        width: 50%;
+        margin: inherit;
+    }
+    aside>span {
+        display: inline;
+        text-justify: auto;
+        margin: auto;
+        color: ivory;
+        font-size: 3vh;
+    }
+    header {
+        overflow: auto;
+        display: block;
+        width: 100%;
+        margin-left: 20%;
+        margin-top: 10%;
+    }
+    main {
+        display: flex;
+        margin-left: 20%;
+        flex-direction: row;
+        width: 100%;
+    }
+    main>section {
+        display: flex;
+        width: 100%;
+    }
+    #section1 {
+        display: flex;
+        flex-direction: column;
+    }
+    #section2 {
+        display: flex;
+        flex-direction: column;
+    }
+    #section3 {
+        display: flex;
+        flex-direction: column;
+    }
+    footer {
+        display: block;
+        margin-left: 20%;
+        width: 100%;
     }
 }
