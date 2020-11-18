@@ -114,7 +114,7 @@ footer {
     background-color: rgb(111, 165, 236);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 640px) {
     span {
         display: flex;
     }
@@ -188,7 +188,7 @@ footer {
     }
     aside>a>img {
         display: flex;
-        width: 50%;
+        width: 25%;
         margin: inherit;
     }
     aside>span {
