@@ -9,6 +9,7 @@ aside,
 main,
 footer {
     display: flex;
+    border: 1px solid black;
 }
 
 span {
@@ -154,8 +155,9 @@ footer {
     header {
         width: 90%;
         height: 10%;
-        margin-top: 10vh;
+        margin-top: 8vh;
         margin-left: 10%;
+        padding-top: 2vh;
     }
     main {
         width: 90%;
