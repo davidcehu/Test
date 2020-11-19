@@ -82,6 +82,10 @@ main {
 main>section {
     flex-basis: auto;
 }
+main>section>h1 {
+    color: ivory;
+    text-align: center;
+}
 
 main>section>audio {
     display: block;
