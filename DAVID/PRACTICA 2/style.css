@@ -55,6 +55,10 @@ nav>a>img {
     margin-bottom: 5%;
 }
 
+nav>a>img:hover {
+    background-color: rgb(39, 90, 231);
+}
+
 aside {
     position: fixed;
     width: 100%;
@@ -71,6 +75,10 @@ aside>a {
 
 aside>a>img {
     width: 100%;
+}
+
+aside>a>img:hover {
+    background-color: orange;
 }
 
 main {
@@ -169,6 +177,7 @@ footer {
     nav {
         position: fixed;
         height: 10%;
+        width: 100%;
     }
     nav>span {
         display: inline;
@@ -179,9 +188,9 @@ footer {
     }
     aside {
         position: fixed;
+        display: flex;
         top: 10%;
-        width: 20%;
-        height: 90%;
+        flex-basis: 25%;
         flex-direction: column;
         text-align: center;
     }
@@ -198,39 +207,38 @@ footer {
         text-justify: auto;
         margin: auto;
         color: ivory;
-        font-size: 3vh;
+        font-size: 1vmax;
     }
     header {
         overflow: auto;
         display: block;
-        width: 100%;
-        margin-left: 20%;
+        width: 90%;
+        margin-left: 10%;
     }
     main {
         display: flex;
-        margin-left: 20%;
+        margin-left: 10%;
         flex-direction: row;
-        width: 100%;
-    }
-    main>section {
-        display: flex;
-        width: 100%;
+        height: 100vh;
     }
     #section1 {
         display: flex;
         flex-direction: column;
+        flex-basis: 33%;
     }
     #section2 {
         display: flex;
         flex-direction: column;
+        flex-basis: 33%;
     }
     #section3 {
         display: flex;
         flex-direction: column;
+        flex-basis: 33%;
     }
     footer {
         display: block;
-        margin-left: 20%;
-        width: 100%;
+        margin-left: 10%;
+        width: 90%;
     }
 }
