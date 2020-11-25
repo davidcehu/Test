@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1%;
+    text-align: center;
+}
+
+th,
+td {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    padding: 5px;
+}
+
+abbr {
+    display: none;
+}
+
+.EIE {
+    background-color: rgb(236, 134, 168);
+}
+
+.LEP {
+    background-color: rgb(201, 166, 201);
+}
+
+.SOR {
+    background-color: rgb(255, 145, 94);
+}
+
+.SR {
+    background-color: rgb(117, 160, 241);
+}
+
+.AW {
+    background-color: rgb(248, 201, 113);
+}
+
+.SI {
+    background-color: rgb(100, 190, 100);
+}
+
+@media (max-width: 640px) {
+    abbr {
+        display: block;
+    }
+    span {
+        display: none;
+    }
+}
