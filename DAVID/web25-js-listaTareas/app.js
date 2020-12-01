@@ -26,3 +26,20 @@ function anyadirElemento(textoTarea) {
     //del parámetro textoTarea
     listaTareas.innerHTML += "<li>" + textoTarea + "</li>";
 }
+
+function borrarTarea() {
+    let numTarea = prompt("Escribe el número de la tarea que quieres borrar")
+
+    let lTareas = document.getElementById("listaTareas");
+
+    if (numTarea >= 1 && numTarea <= lTareas.children.length) {
+
+        let indice = numTarea - 1;
+
+        let eTareaBorrar = lTareas.children[indice];
+
+        lTareas.removeChild(eTareaBorrar);
+    } else {
+        alert("Número no válido.");
+    }
+}
