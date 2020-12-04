@@ -1,7 +1,18 @@
+<<<<<<< HEAD
 table{
     border-collapse:collapse ;
 }
 
 td,th{
     border: 1px solid black;
+=======
+table {
+    border-collapse: collapse;
+}
+
+tr,
+td {
+    border-style: solid;
+    border-color: black;
+>>>>>>> 63c03d6de4ddd2c96e49983f2b119b042a452620
 }

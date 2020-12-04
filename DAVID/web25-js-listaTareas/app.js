@@ -20,11 +20,17 @@ function anyadirElemento(textoTarea) {
 
     //Creamos un elemento <li>
     liTarea = document.createElement("li");
+<<<<<<< HEAD
 
     //Relleno el elemento
     liTarea.innerHTML = textoTarea;
 
     //Añado el elemento a la listaTareas
+=======
+    // Relleno el elemento
+    liTarea.innerHTML = textoTarea;
+    //Añado el elemento a la lista Tareas
+>>>>>>> 63c03d6de4ddd2c96e49983f2b119b042a452620
     listaTareas.appendChild(liTarea);
 
     //Esto es equivalente
@@ -34,6 +40,7 @@ function anyadirElemento(textoTarea) {
 function borrarTarea() {
     //usar prompt para pedir al usuario un número de tarea.
     let numTarea = prompt("Escribe el número de la tarea que quieres borrar");
+<<<<<<< HEAD
     
     // capturo la lista de tareas.
     let lTareas = document.getElementById("listaTareas");
@@ -51,6 +58,23 @@ function borrarTarea() {
 
         //lTareas.removeChild(lTareas.children[numTarea-1]);
     }else{
+=======
+
+    // capturo la lista de tareas.
+    let lTareas = document.getElementById("listaTareas");
+    //comprobar que el número de tarea es válido
+    if (numTarea >= 1 && numTarea <= lTareas.children.length) {
+        //borrar de la lista de tareas el elemento número
+        //n-1, donde n es el valor que me ha pasado el
+        // usuario.
+        numTarea = numTarea - 1; //numTarea--; numTarea-=1;
+
+        //capturo el elemento que quiero borrar.
+        let eTareaBorrar = lTareas.children[numTarea];
+        //borro ese elemento de la lista.
+        lTareas.removeChild(eTareaBorrar);
+    } else {
+>>>>>>> 63c03d6de4ddd2c96e49983f2b119b042a452620
         alert("Número no válido.");
     }
 }
