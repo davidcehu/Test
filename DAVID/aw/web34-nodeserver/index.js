@@ -2,9 +2,10 @@
 const express = require('express');
 const app = express();
 
-
-app.get('/', function name() {
-    console.log("un cliente ha conectado");
+// req significa petición (request)
+// res significa respuesta (response)
+app.get('/', function(req, res) {
+    console.log("un cliente ha conectado: " + req.ip);
 
 })
 const puerto = 3000;
