@@ -6,6 +6,7 @@ const app = express();
 // res significa respuesta (response)
 app.get('/', function(req, res) {
     console.log("un cliente ha conectado: " + req.ip);
+    res.send('Hola tu ip es: ' + req.ip)
 
 })
 const puerto = 3000;
