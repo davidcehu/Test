@@ -1,3 +1,11 @@
 body {
-    background-color: khaki;
+    background-color: lightblue;
+}
+
+img {
+    width: 19%;
+}
+
+video {
+    width: 19%;
 }
