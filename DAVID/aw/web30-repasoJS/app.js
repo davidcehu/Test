@@ -4,5 +4,5 @@ function saludar(nombre) {
     alert('Hola ' + nombre);
 }
 
-setInterval(saludar, 2000, ["David"]);
+setInterval(saludar, 2000, ["Sergio"]);
 alert("Hola Mundo");
