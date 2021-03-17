@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header,
+nav,
+aside,
+main,
+footer {
+    display: flex;
+    border: 1px solid black;
+}
+
+span {
+    display: none;
+}
+
+header {
+    background-color: rgb(84, 133, 238);
+    height: 10vh;
+}
+
+header>img {
+    width: 10vh;
+    height: 7vh;
+    margin: 1vh;
+}
+
+header>span {
+    display: flex;
+    margin: auto;
+    color: ivory;
+    font-size: 3vh;
+}
+
+nav {
+    background-color: orange;
+    padding-top: 2%;
+    height: 10%;
+}
+
+nav>a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav>a>img {
+    display: flex;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+}
+
+nav>a>img:hover {
+    background-color: rgb(39, 90, 231);
+}
+
+aside {
+    position: fixed;
+    width: 100%;
+    min-height: 10vh;
+    bottom: 0px;
+    background-color: rgb(136, 179, 243);
+}
+
+aside>a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+aside>a>img {
+    width: 100%;
+}
+
+aside>a>img:hover {
+    background-color: orange;
+}
+
+main {
+    width: 100%;
+    background-color: rgb(2, 13, 172);
+    flex-direction: column;
+}
+
+main>section {
+    flex-basis: auto;
+}
+main>section>h1 {
+    color: ivory;
+    text-align: center;
+}
+
+main>section>audio {
+    display: block;
+    width: 100%;
+}
+
+main>section>video {
+    display: block;
+    width: 100%;
+}
+
+main>section>iframe {
+    display: block;
+    width: 100%;
+}
+
+footer {
+    display: none;
+    background-color: rgb(255, 174, 0);
+}
+
+#section1 {
+    background-color: rgb(0, 110, 255);
+}
+
+#section2 {
+    background-color: rgb(76, 126, 233);
+}
+
+#section3 {
+    background-color: rgb(111, 165, 236);
+}
+
+@media (min-width: 640px) {
+    span {
+        display: flex;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        padding-right: 5%;
+    }
+    nav>a>img {
+        display: flex;
+        width: 20%;
+        margin-top: 1%;
+        margin-left: 15%;
+        margin-right: 15%;
+        padding-bottom: 5%;
+    }
+    nav>span {
+        display: inline;
+        text-justify: auto;
+        margin: auto;
+        color: ivory;
+        font-size: 2vh;
+    }
+    aside {
+        width: 10%;
+        height: 90vh;
+        flex-direction: column;
+    }
+    aside>span {
+        display: none;
+        text-justify: auto;
+    }
+    aside>a>img {
+        display: flex;
+        margin-bottom: 15vh;
+    }
+    header {
+        width: 90%;
+        height: 10%;
+        margin-top: 8vh;
+        margin-left: 10%;
+        padding-top: 2vh;
+    }
+    main {
+        width: 90%;
+        margin-left: 10%;
+    }
+}
+
+@media (min-width: 1000px) {
+    nav {
+        position: fixed;
+        height: 10%;
+        width: 100%;
+    }
+    nav>span {
+        display: inline;
+        text-justify: auto;
+        margin: auto;
+        color: ivory;
+        font-size: 2vh;
+    }
+    aside {
+        position: fixed;
+        display: flex;
+        top: 10%;
+        flex-basis: 25%;
+        flex-direction: column;
+        text-align: center;
+    }
+    aside>a {
+        margin-bottom: 10%;
+    }
+    aside>a>img {
+        display: flex;
+        width: 25%;
+        margin: inherit;
+    }
+    aside>span {
+        display: inline;
+        text-justify: auto;
+        margin: auto;
+        color: ivory;
+        font-size: 1vmax;
+    }
+    header {
+        overflow: auto;
+        display: block;
+        width: 90%;
+        margin-left: 10%;
+    }
+    main {
+        display: flex;
+        margin-left: 10%;
+        flex-direction: row;
+        height: 100vh;
+    }
+    #section1 {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 33%;
+    }
+    #section2 {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 33%;
+    }
+    #section3 {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 33%;
+    }
+    footer {
+        display: block;
+        margin-left: 10%;
+        width: 90%;
+    }
+}
